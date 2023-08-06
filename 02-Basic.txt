@@ -1,0 +1,19 @@
+-  Check Git Version or Git installed: git version/ git --version/ git -v
+
+- git status: gives information on the current status of a   git repository and its contents
+
+- git init: crates a new git repository. Do once per project.
+
+- After Initializing, .git folder with some files attached as hidden. If we remove this folder, git history will also be removed.
+
+- Do not init a repo inside another repo.
+
+- A commit is a checkpoint of time, is a snapshot of changes in our repo
+
+- git add fileName: add specific files to the staging area/ group changes. From working directory to staging area.
+
+- git add . : Stage all changes at once
+
+- git commit -m 'message': commit changes from staging area with a commit message
+
+- git log: log of the commands for the given repository.
