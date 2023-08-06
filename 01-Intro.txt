@@ -1,1 +1,42 @@
-Initiating
+- Git is a VCS: Version Control System
+
+- Version Control is a software that tracks and manages changes to files over time.
+
+- Allows users to revisit earlier versions, undo changes etc
+
+- Git is a one of the many version control system. Other well-known including SubVersion, CVS, Mercurial.
+
+- Git track changes across multiple files, compare versions of a project, time travel back to old version, revert to a previous version, collaborate and share changes, combine collaborations.
+
+- Github is a service that hosts git repositories in the cloud and makes it easy to collaborate with other people.
+
+- Git was created as command-line tool. To use it, we run various git commands in a unix shell.
+
+- Popular Git GUI's include: github desktop, source tree, tower, gitkraken etc.
+
+- Bash is a command line interface that is widely used by developers. It is default for linux and Mac. Git bash is a tool that emulates a Bash experience on a windows machine
+
+- Configuring after install: git config --global user.name 'Abdul Alim', user.email
+
+- Check your Nam: git config user.name
+
+- Some Basic Terminal Command for Windows:
+
+       1. Folder and Files List: ls, with hidden: ls -a
+       2. Open the Folder: start .
+       3. What is Inside the Folder: ls FolderName, ls folder/another folder
+       4. Open that Folder: open FolderName
+       5. clearing terminal: clear
+       6. Print Working Directory: pwd
+       7. Changing Directory: cd folder/
+       8. Back one level: cd ..
+       9. Creating File: touch name.txt (can be multiple file)
+       10 New Folder: touch folderName/file.txt
+       11. Make Directory: mkdir folderName
+       12. Delete File: rm file.txt
+       13. Delete Folder: rm -rf folderName
+       14 Open in VsCode: code .
+
+- A git rep is a workspace which tracks and manages files withing a folder.
+
+
