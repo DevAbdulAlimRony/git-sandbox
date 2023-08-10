@@ -17,3 +17,22 @@
 - git commit -m 'message': commit changes from staging area with a commit message
 
 - git log: log of the commands for the given repository.
+
+- summary of the commit: git log --oneline
+
+- Atomic Commits: When possible, a commit should encompass a single feature. change or fix.
+
+- Amending Commits: Suppose you just made a commit and the realized you forgot to include a file! or maybe you made a typo in git messages that should be changed. You can Redo the previous commit: git commit --amend
+
+- Ignoring files: We can tell git which files and directories to ignore in a given repository, using a .gitignore file. This is useful for files you know you never want to commit including secrets, api keys, operating system files, log files, dependencies and packages
+
+- Create a file in the root repo named .gitignore and write what you want to ignore like-
+                                .DS_Store
+                                secrets.text
+                                node_modules/
+                                resources.views.teachers
+                                *.log
+                                
+- Use gitignore.io to get recommendation what to ignore.
+
+- Add and Commit: git commit -a -m 'message'

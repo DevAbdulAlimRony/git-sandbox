@@ -1,0 +1,56 @@
+- Think of branches a alternative timelines for a project
+
+- Enables us to create separate contexts where we can try new things or, even work on multiple ideas in parallel.
+
+- If we make changes on one branch, they do not impact the other branches unless we merge the changes.
+
+- The default branch is main. It doesn't do anything special. It's just like any other branches. In 2020, gihub renamed the default branch  from master to main.
+
+- Head is simply a pointer that refers to the current location in the repository. It points to a particular branch reference. So, it always points to the latest commit you made referencing to a branch pointer.
+
+- View Existing Branches: git branch , git branch -v
+
+- Create a Branch: git branch <branch-name>
+
+- After creating a new branch, current branch is yet master, head is pointing to master.
+
+- Switch Branches: git switch <branch-name>. Head will now point to that branch.
+
+- Old way to switch and also additional work: git checkout <branch-name>
+
+- Create and Switch: git switch -c <branch-name>
+
+- Before switching git, must commit your work on existing branch
+
+- Delete Branch after Merging: git branch --delete or -d <Branch-Name>
+
+- Delete Forcefully: git branch -D <branch-name>
+
+- Renaming Branch: git branch --move or -m <new-name>
+
+- References Mechanisms: .git folder -> HEAD -> Referencing all branches-> open a branch -> Referencing last commit hash code
+
+- Merging: Incorporate changes from one branch into another. Remember the two merging concepts
+
+        1. We merge branches, not specific commits
+        2. We always merge to the current HEAD Branch
+
+- Fast Forward Merge: Simpler Merge to perform.
+                      1. switch to the destination branch we are merging into.
+                      2. git merge <to-merge-branch-name>
+                      3. After merging, we will get all commits from that branch
+
+- Merge Commit: When conflicts happen. Ex. Two branches edited the same line of a same file.
+
+- Conflict Error: CONFLICT(content): Merge conflict in blah.txt. Automatic merge failed; fix conflicts and then commit the result.
+
+- Conflict Markers: <<<<< Lines ====  Lines >>>>another-branch
+
+- Resolving Conflicts:
+                        1. Open up the files with merge conflicts
+                        2. Edit the File to remove conflicts. Decide which branch content you want to keep or keep both.
+                        3. Remove the Conflict Markers in the document
+                        4. Add your changes and then make a commit.
+                        5. or, use vscode to do it.
+ 
+
