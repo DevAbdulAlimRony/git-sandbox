@@ -52,5 +52,21 @@
                         3. Remove the Conflict Markers in the document
                         4. Add your changes and then make a commit.
                         5. or, use vscode to do it.
+
+-Stashing: Git provides an easy way of stashing these uncommited changes so that we can return to them  later, without having a make unnecessary commits.
+
+- git stash/ git stash save: Save staged and unstaged changes you are not ready to commit yet. Undo from working directory but save in stash.
+
+- git stash pop: To remove the most recently stashed changes in your stash and re-apply them to your working copy.
+
+- git stash apply: Apply something but don't remove from stash.
+
+- Stack of stash: stash again and again.
+
+- View Stash - git stash list
+
+- Referencing particular stash in view: git stash apply stash@{2}, git stash drop stash@{2}
+
+- git stash clear
  
 

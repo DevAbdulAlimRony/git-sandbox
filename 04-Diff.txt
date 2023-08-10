@@ -1,0 +1,9 @@
+- git diff: Lists all the changes in our working directory that are not staged for the next content.
+
+- git diff HEAD (staged and unstaged changes), git diff --staged, git diff --cached (same as staged)
+
+- Narrowed Down to Particular File: git diff HEAD [fileName], git diff --staged [fileName]
+
+- Comparing Branch - git diff branch1..branch2 , or without ..
+
+- Comaring Commits- git diff commit1..commit2
