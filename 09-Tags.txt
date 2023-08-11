@@ -1,0 +1,33 @@
+- Tags are pointers that refer to particular points in git history. We mark a particular moment in time with a tag. Tags are most often used to mark version releases in projects. There are two type- lightweight, annotated.
+
+- Lightweight Tags: They are just a name/label that points to a particular commit.
+
+- Annotated tags: Store extra meta data including the author's nam and email, the date and a tagging message like a commit message
+
+- Semantic Versioning: The semantic versioning specify outlines a standardized versioning system for software releases. It provides a consistent way for developers to give meaning to their software releases. It consists of three numbers separated by periods/dot like 2.4.1
+        1. Initial Release: 1.0.0
+
+        2. Patch Release: Do not contain new features or significant changes. They typically signify bug fixes and other changes that do not impact how the cod is used. - 1.0.1
+
+        3. Minor Release: It signify that new features or functionality have been added, but the project is still backwards compatible, no breaking changes. The new functionality is optional and should not force users to rewrite their own code- 1.1.0
+
+        4. Major Release: It signifies changes that is no longer backward compatible. Features maybe removed or changed.
+
+- View Tags: git tag
+            using wildcard pattern: git tag -l "*beta*"
+
+- Comparing Tags: git checkout 13.2.1
+                  git diff v1.0.0 v1.0.2
+
+- Creating Lightweight Tag: git tag 1.0.0
+
+- Creating Annotated Tag: git tag -a v1.0.0 (you will get editor to write description)
+
+- Tag to Previous Commit: git tag <tagName> <commitHash>
+
+- Forcing Tags: git tag 1.0.0 -f 
+
+- Deleting tag: git tag -d <tagName>
+
+- Pushing tags: By default, git push doesn't push tag.
+                git push --tags
