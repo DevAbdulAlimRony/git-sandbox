@@ -1,0 +1,57 @@
+- Gihub is a hosting platform for git repositories. You can access them anywhere and share thm with people around the world. Gihub also provides additional features that are not native to git.
+
+- The basic free tier allows for unlimited public and private repos, unlimited collaborators and more.
+
+- git clone <url>: Git will retrieve all the files associated with the repository and will copy them to your local machine. In addition, git initializes a new repository on your machine, giving you access to the full git history of th cloned project.
+
+- Anyone can clone a repository from github, provided the repo is public. But for pushing or to contribute, you need permission.
+
+- Git clone is a standard git command. It is tis specifically to github. We can use it to clone repositories that are hosted anywhere. It just happens that most of the hosted repos are on github these days.
+
+- SSH KeyL You need to be authenticated on github to do certain operations like pushing up code from your local machine. Your terminal will promt every single time for your github email and password unless you generate and configure a SSH key.
+
+- Connection Repo: option1- Create repo and push. option2 - create repo on github, clone it and start pushing from local.
+
+- Git Remote: Remote Destination url
+
+- Listing Remotes: git remote, git remote -v 
+
+- Adding a New remote: git remote add origin <url>
+                       Anytime I say origin, I refer to that url. Origin can be any name. 
+
+- git remote rename <old> <new>, git remote remove <name>
+
+- Branch Rename to Main: git branch -M main
+
+- git push <remote-name> <branch-name> : git push origin main
+
+- Push in Detail: git push origin <local-branch>:<remote branch>
+
+- The -u Option: Allows us to set the upstream of the branch we'are pushing. Can b think as a link connecting our local branch to a branch on github. 
+
+- git push -u origin main or --set-upstream instead of -u: Now, my local branch and remote conncted to each other. So, anytime I can use this shortcut: git push.
+
+- What was the Project look like when cloned: git checkout origin/main
+
+- View Remote Branches: git branch -r (Other branches accept main like origin/otherBranch)
+
+- After cloning, we will see just main branch in local. We can access and connect to another remote branch, just switch by name.
+
+- My teammate push something, but I don't know from local. How can I get that?
+                            1. Fetching is going to take remote changes and bring them to our local repo, but not in working directory. Its like- please go and get the latest information from github and don't screw up with my working directory. Its like staging changes.
+
+                            - All Branch: git fetch origin
+                            - Specific Branch: git fetch origin main
+
+                            2. git pull is another command w can use to retrieve changes from a remote repository. Pull actually updates our HEAD branch with whatever changes one retrieved from the remote. 
+
+                            git pull = git fetch + git merge
+
+                            update my current branch with whatever changes.
+
+                            - git pull origin master
+                            - If I am in another branch, pull from master and merge it
+                            
+                            - Pulling can be conflicted.
+
+                            - If we run jus 'git pull' without specifying a particular remotes or branch to pull from, git assumes: remote will default to origin, branch will default to whatever tracking connection is configured for your current branch.
