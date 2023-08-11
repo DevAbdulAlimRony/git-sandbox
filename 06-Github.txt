@@ -6,6 +6,8 @@
 
 - Anyone can clone a repository from github, provided the repo is public. But for pushing or to contribute, you need permission.
 
+- Private Repository will be visible to the owner and permitted users. 
+
 - Git clone is a standard git command. It is tis specifically to github. We can use it to clone repositories that are hosted anywhere. It just happens that most of the hosted repos are on github these days.
 
 - SSH KeyL You need to be authenticated on github to do certain operations like pushing up code from your local machine. Your terminal will promt every single time for your github email and password unless you generate and configure a SSH key.
