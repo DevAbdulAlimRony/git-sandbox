@@ -1,0 +1,26 @@
+- .git folder:
+    1. config folder: Customizing git, Configuring global settings like our name and email across all git repos, but we can also configure things on a per-repo basis.
+    - git config --local user.name
+    - changing info, error color and so on.
+
+    2. Refs Folder: Inside of refs, you will find a head directory. It contains one file for a branch and contains the hash of the commit at the tip of the branch.
+    More - remotes, origin, tags folder
+
+    3. HEAD File: It points to the commit instead of branch
+
+    4. Objects Folder: The objects directory contains all the repo files. This is where git stores the backups of files, the commits in a repo and more. The fils are all compressed and encrypted, so they won't look like much.
+    4 different types of object-  commit, tree, blob, annotated tag
+
+- Hashing Function: 40 characters long. They take inputs of variable size and output as fixed size. Git uses a hashing function SHA-1. Just check: echo "something" | git hash-object --stdin
+
+- Git Database: Git is a key value store.
+
+- Git blobs(binary large object) are the object type Git uses to store the contents of files in a given repository.
+
+- Tree: Tress are git objects used to store the contents of a directory. Each tree contains pointers that can refer  to blobs and to other trees.
+
+- View Trees: git cat-file -p master^{tree}
+
+- git-cat-file prints git objects
+
+- Commit objects combine a tree object along with information about the context that led to the current tree.
