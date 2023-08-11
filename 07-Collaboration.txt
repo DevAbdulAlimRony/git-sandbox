@@ -1,0 +1,30 @@
+- Permission to collaborate/push- Permission: Settings -> Manage Access - Invite Collborator
+
+- While it is nice and easy to only work on the master branch or in a centralized workflow, this leads to some serious issues on teams. Lots of time spent resolving conflicts and merging code.
+
+- Feature Branches: Rather than working directly on master/main. all new development should be done on separate branches. Treat master/main branch as the official project history. Multiple teammates can collaborate on a single feature and share code back and forth without polluting the master/main branch.
+
+- Pull Requests: Pull Requests are a feature built in to products like github and bitbucket. They are not native to git yourself. They allow developers to alert team-members to new work that needs to be reviewed. They approve a mechanism to approve or reject the work on a given branch. They also help facilitate discussion and feedback on the specified comments.
+
+- Conflict can happen when pull Requests
+
+- Branch Protection: From Settings, set rules and settings.
+
+- Forking and cloning: Instead of just one centralized github repository, every developer has their own github repository in addition to the main repo. Developers mak changes and push to their own forks before making pull requests.
+
+- Forking: Github allows us to create personal copies of other people's repositories. We call those copies a 'fork' of the original. It allows a project maintainer to accept contributions from developers all around the world without having to add them as actual owners of the main project repository. 
+   1. Fork the repository
+   2. Clone with the link
+   3. Add a Remote
+   4. Make a Pull Request to the Original Project
+
+- Rebasing: There are two main ways to use the git rebase command(As an alternative to merging, as a cleanup tool)
+
+- git rebase <branch>- Merging by rebase: Instead of using a merge commit, rebasing rewrites history by creating new commits for each of the original feature branch commit. we get a much cleaner project history. No unnecessary merge commits. Linear Project history.
+
+- Never rebase commits that have been shared with others. If yo have already pushed commits up to github, do not rebase them unless you are positive no one on the team is using theses commits.
+
+- Interactive Rebasing: Sometimes, we want to rewrite, delete, rename, or even reorder commits(before sharing them). Running git rebase with the -i option will enter the interactive mode, which allows us to edit commits, add files, drop commits etc. We need to specify how far back we want to rewrite commits.
+
+-   git rebase -i HEAD~4
+    pick, reword, fixup, edit, drop and so on options we will get.
