@@ -1,0 +1,11 @@
+- Git keeps a record of when the tips of branches and other references wre updated in the repo. Git only keeps reflogs on our local directory. They are not shared with collaborators. Git cleans out old entries around 90 days.
+
+- Git reflog accepts subcommands show, expire, dlete and exists.
+
+- git reflog, git reflog show HEAD, name@{quantifier}.
+
+- git reflog master@{one.week.ago}, git reflog HEAD HEAD@{yesterday}
+
+- We can sometimes use reflog entries to access commits that seem lost and are not appearing in git log.
+
+- Writing Custom Aliases
